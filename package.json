@@ -1,8 +1,8 @@
 {
   "name": "curried-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A curried way to map an array through a function",
-  "main": "dist/index.js",
+  "main": "common.js",
   "jsnext:main": "index.js",
   "scripts": {
     "test": "babel-node test/test.js | tap-spec",
