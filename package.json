@@ -1,0 +1,40 @@
+{
+  "name": "curried-map",
+  "version": "1.0.0",
+  "description": "A curried way to map an array through a function",
+  "main": "dist/index.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "test": "babel-node test/test.js | tap-spec",
+    "build": "babel index.js > dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuxsudo/curried-map.git"
+  },
+  "keywords": [
+    "array",
+    "map",
+    "curry"
+  ],
+  "author": "Jared Anderson @tuxsudo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tuxsudo/curried-map/issues"
+  },
+  "homepage": "https://github.com/tuxsudo/curried-map#readme",
+  "devDependencies": {
+    "babel-cli": "^6.0.15",
+    "babel-preset-es2015": "^6.0.15",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "dependencies": {
+    "instant-curry": "^1.0.0"
+  }
+}
